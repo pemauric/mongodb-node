@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/pemauric/mongodb-node#readme",
   "dependencies": {
-    "express-handlebars": "^5.3.3"
+    "express": "^4.18.2",
+    "express-handlebars": "^5.3.3",
+    "mongodb": "^5.7.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

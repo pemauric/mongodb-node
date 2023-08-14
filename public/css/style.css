@@ -1,0 +1,58 @@
+
+*{
+    font-family: Fira Code;
+    background-color: #222;
+    color : #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 19.1px 22.3px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    border-bottom: 1px solid #444;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin:24px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.navbar ul li a:hover {
+    font-size: 18px;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.container {
+    min-height: 60vh;
+    padding: 32px;
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #444;
+
+}
+
+footer span {
+    color: white;
+    font-weight: bold;
+}
