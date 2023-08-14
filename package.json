@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js localhost 3000"
   },
   "repository": {
     "type": "git",
@@ -17,11 +18,10 @@
     "url": "https://github.com/pemauric/mongodb-node/issues"
   },
   "homepage": "https://github.com/pemauric/mongodb-node#readme",
-  "devDependencies": {
-    "express": "^4.18.2",
-    "nodemon": "^3.0.1"
-  },
   "dependencies": {
     "express-handlebars": "^5.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
