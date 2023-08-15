@@ -17,6 +17,12 @@ class Product {
         return product
     }
 
+    static getProducts(){
+        const products = conn.db().collection('products').find().toArray()
+
+        return products
+    }
+
 }
 
 module.exports = Product
