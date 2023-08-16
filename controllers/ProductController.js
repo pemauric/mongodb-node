@@ -27,4 +27,6 @@ module.exports = class ProductController {
 
         res.redirect("/")
     }
+
+    static async 
 }

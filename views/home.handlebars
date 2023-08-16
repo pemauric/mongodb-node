@@ -1,7 +1,9 @@
 <div class=" products ">
     {{#each products}}
-        <div class="products">
+        <div class="product">
             <h3>{{this.name}}</h3>
+            <p>R$ {{this.price}}</p>
+            <a href="/{{this._id}}"> Ver detalhes</a>
         </div>
     {{/each}}
 </div>
