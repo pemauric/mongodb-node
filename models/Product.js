@@ -43,6 +43,15 @@ class Product {
         return 
     }
 
+    updateProduct(id) {
+        
+        console.log("Received ID:", id);
+        
+        conn.db().collection('products').updateOne({_id : ObjectId(id)}, {$set: this})
+
+        return 
+    }
+
 
 }
 

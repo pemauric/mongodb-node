@@ -2,7 +2,7 @@
 <div class="form-container">
     <form action="/edit" method="POST">
     <div class="form-control">
-        <input type="hidden" name="id" value="{{this._id}}">
+        <input type="hidden" name="id" value="{{product._id}}">
         <label for="name"> Nome do produto: </label>
             <input type="text" placeholder="Digite o nome do produto" name="name" value="{{product.name}}">
         </div>
@@ -15,7 +15,7 @@
             <input type="text" value="{{product.price}}" placeholder="Digite o preco do produto" name="price">
         </div>
         <div class="form-control">
-            <button type="submit" class="btn">Editar</button>
-            </div>
+            <button type="submit" class="btnProduct-edit">Editar</button>
+        </div>
     </form>
 </div>

@@ -61,4 +61,20 @@ module.exports = class ProductController {
         res.redirect("/")
     }
 
+    static async updateProductPost (req, res) { 
+        const id = req.body.id 
+        const name = req.body.name 
+        const description = req.body.description
+        const price = req.body.price
+        
+
+
+        const product = new Product(name, description, price )
+        
+        await product.updateProduct(id)
+
+        res.redirect('/')
+        
+    }
+
 }
