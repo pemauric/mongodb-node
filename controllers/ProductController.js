@@ -31,6 +31,8 @@ module.exports = class ProductController {
     static async getProduct (req, res) {
         const id = req.params.id
 
+        console.log("Received ID:", id);
+
         const product = await Product.getProductById(id)
 
         console.log(product)
@@ -49,6 +51,14 @@ module.exports = class ProductController {
 
 
         res.render('edit', { product })
+    }
+
+    static async removeProduct (req, res) {
+        const id = req.params.id
+
+        Product.removeProduct(id)
+
+        res.redirect("/")
     }
 
 }

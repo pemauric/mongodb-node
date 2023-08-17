@@ -26,10 +26,23 @@ class Product {
     }
 
     static async getProductById(id) {
+        
+        console.log("Received ID:", id);
+        
         const product = await conn.db().collection('products').findOne({_id : ObjectId(id)})
 
         return product
     }
+
+    static async removeProduct(id) {
+        
+        console.log("Received ID:", id);
+        
+        const product = await conn.db().collection('products').deleteOne({_id : ObjectId(id)})
+
+        return 
+    }
+
 
 }
 

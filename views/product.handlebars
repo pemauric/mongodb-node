@@ -6,7 +6,9 @@
         <p><span>Descrição:</span> {{product.description}}</p>
     </div>
     <div class="actions-product">
-        <a href="/edit/{{product._id}}">Editar</a>
-        <a href="/remove">Remover</a>
+        <a href="/edit/{{product._id}}"><button class="btnProduct-edit">Editar</button></a>
+        <form action="/remove/{{product._id}}" method="POST">
+            <input type="submit" value="Remover" class="btnProduct-remove">
+        </form>
     </div>
 </div>
